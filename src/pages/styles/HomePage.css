@@ -1,0 +1,38 @@
+.main_header{
+  /* background-color: aqua; */
+  height: 70px;
+}
+
+.main_body{
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 100px 1fr;
+  grid-column-gap: 3px;
+  grid-row-gap: 3px;
+
+  .div1{
+    grid-area: 1 / 1 / 3 / 2;
+    /* background-color: aquamarine; */
+  }
+
+  .div2{
+    grid-area: 1 / 2 / 2 / 3;
+    /* background-color: cadetblue; */
+  }
+
+  .div3{
+    display: flex;
+    overflow: auto;
+    grid-area: 2 / 2 / 3 / 3;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.main_footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: aquamarine; */
+  height: 60px;
+}
