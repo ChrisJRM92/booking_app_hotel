@@ -24,13 +24,13 @@ const HomePage = () => {
         <p>Menu superior aqui</p>
       </div>
       <div className="main_body">
-        <div class="div1">
+        <div className="div1">
           <p>Menu lateral aqui</p>
         </div>
-        <div class="div2">
+        <div className="div2">
           <p>Buscar aqui</p>
         </div>
-        <div class="div3">
+        <div className="div3">
         {
           products?.map(hotel => (
             <HotelCard
