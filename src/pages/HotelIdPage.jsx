@@ -3,6 +3,8 @@ import useFetch from "../hooks/useFetch"
 import { useEffect } from "react"
 import OtherHotels from "../components/HotelIdPage/OtherHotels"
 import MapHotel from "../components/HotelIdPage/MapHotel"
+import FormReservation from "../components/HotelIdPage/FormReservation"
+import './styles/HotelIdPage.css'
 
 const HotelIdPage = () => {
 
@@ -19,19 +21,8 @@ const HotelIdPage = () => {
   
 
   return (
-    <div>
+    <div className="container_Id_page">
       <h2>{hotel?.name}</h2>
-      <div>
-        <img src={hotel?.images[0].url} alt="" />
-      </div>
-      {
-        hotel && (
-          <MapHotel
-          lat = {hotel?.lat}
-          long = {hotel?.lon}
-          />
-        )
-      }
       <div> 
         <span>{hotel?.rating}</span>
       </div>
@@ -39,9 +30,28 @@ const HotelIdPage = () => {
       <div>
         {hotel?.address}
       </div>
-      <p>{hotel?.description}</p>
+      <div className="conatiner_info">
+        <img className="slider" src={hotel?.images[0].url} alt="" />
+        <div className="map_map">
+        {
+          hotel && (
+            <MapHotel
+            lat = {hotel?.lat}
+            long = {hotel?.lon}
+            />
+          )
+        }
+        </div>
+      </div>
+      <p className="hotel_description">{hotel?.description}</p>
 
-      <div>
+      <section className="reservation_now">
+        <FormReservation
+        hotelId = {id}
+        />
+      </section>
+
+      <div className="other_hotels">
         <OtherHotels 
         city = {hotel?.city}
         id = {id}

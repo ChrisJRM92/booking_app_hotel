@@ -1,5 +1,6 @@
 import { useForm } from "react-hook-form"
 import useAuth from "../hooks/useAuth"
+import './styles/LoginPage.css'
 
 const LoginPage = () => {
 
@@ -16,20 +17,21 @@ const LoginPage = () => {
   }
 
   return (
-    <div>
-      <form onSubmit={handleSubmit(submit)}>
-        <h2>Login User</h2>
-        <div>
+    <div className="login_container">
+      <div className="img_icon"></div>
+      <form className="form_content" onSubmit={handleSubmit(submit)}>
+        <h2 className="title_login">Iniciar sesion</h2>
+        <div className="form_elements">
           <label>
-            <span>Email</span>
-            <input {...register('email')} type="email" />
+            <p className="label_text">Correo</p>
+            <input {...register('email')} type="email" placeholder="correo@mail.com" />
           </label>
           <label>
-            <span>Password</span>
+            <p className="label_text">Contraseña</p>
             <input {...register('password')} type="password" />
           </label>
         </div>
-        <button>Submit</button>
+        <button className="button_login">Iniciar sesion</button>
       </form>
     </div>
   )

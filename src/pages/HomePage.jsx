@@ -20,15 +20,12 @@ const HomePage = () => {
 
   return (
     <div>
-      <div className="main_header">
-        <p>Menu superior aqui</p>
-      </div>
       <div className="main_body">
         <div className="div1">
-          <p>Menu lateral aqui</p>
+          <p>Filtros de busqueda aqui</p>
         </div>
         <div className="div2">
-          <p>Buscar aqui</p>
+          <p>Formulario de busqueda aqui</p>
         </div>
         <div className="div3">
         {

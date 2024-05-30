@@ -1,0 +1,42 @@
+.container_Id_page{
+  padding: 90px 10px 0 10px;
+}
+
+.conatiner_info{
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 10px 0;
+
+  .slider{
+    width: 300px;
+  }
+  .map_map{
+    width: 300px;
+    margin-left: 10px;
+  }
+}
+
+.hotel_description{
+  font-size: 13px;
+}
+
+.reservation_now{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.other_hotel_container{
+  margin-top: 30px;
+}
+
+.other_hotel_title{
+  text-align: center;
+}
+
+.other_hotel_card{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}

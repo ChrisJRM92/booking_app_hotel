@@ -1,5 +1,6 @@
 import { useForm } from "react-hook-form"
 import useAuth from "../hooks/useAuth"
+import './styles/RegisterPage.css'
 
 const RegisterPage = () => {
 
@@ -20,38 +21,39 @@ const RegisterPage = () => {
   }
 
   return (
-    <article>
-      <form onSubmit={handleSubmit(submit)}>
-        <h2>Register</h2>
+    <div className="register_container">
+      <div className="hi_logo"></div>
+      <form className="form_register" onSubmit={handleSubmit(submit)}>
+        <h2>Registro</h2>
         <div>
           <label>
-            <span>First name</span>
+            <p>Nombre</p>
             <input {...register('firstName')} type="text" />
           </label>
           <label>
-            <span>Last name</span>
+            <p>Apellido</p>
             <input {...register('lastName')} type="text" />
           </label>
           <label>
-            <span>Email</span>
+            <p>Correo</p>
             <input {...register('email')} type="email" />
           </label>
           <label>
-            <span>Password</span>
+            <p>Contraseña</p>
             <input {...register('password')} type="password" />
           </label>
           <label>
-            <span>Gender</span>
+            <p>Genero</p>
             <select {...register('gender')}>
-              <option value="male">Male</option>
-              <option value="female">Female</option>
+              <option value="male">Masculino</option>
+              <option value="female">Femenino</option>
               <option value="other">Other</option>
             </select>
           </label>
         </div>
-        <button>Submit</button>
+        <button className="buttom_register">Registrarse</button>
       </form>
-    </article>
+    </div>
   )
 }
 

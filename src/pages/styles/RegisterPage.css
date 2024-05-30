@@ -1,0 +1,33 @@
+.register_container{
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  .hi_logo{
+    width: 60px;
+    height: 60px;
+    background-image: url('/public/logo.png');
+    background-size: contain;
+  }
+
+  .form_register{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
+.buttom_register{
+  background-color: #5e63bc;
+  color: aliceblue;
+  border-radius: 8px;
+  border-style: none;
+  width: 100px;
+  height: 30px;
+  margin-top: 10px;
+  align-self: center;
+  cursor: pointer;
+}

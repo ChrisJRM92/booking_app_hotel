@@ -5,6 +5,7 @@
   background-color: #ffffff;
   border-radius: 25px;
   margin: 10px;
+  filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.1));
 
   .header_content{
     background-color: transparent;
@@ -113,10 +114,10 @@
 
     .buttom_content{
       .hotel_see_more{
-        border-radius: 30px;
+        border-radius: 8px;
         color: #f1f1ff;
         border-style: none;
-        background: linear-gradient( #6b73ff, #2a35ff);
+        background-color: #5e63bc;
         height: 30px;
         padding: 5px;
         width: 90px;
