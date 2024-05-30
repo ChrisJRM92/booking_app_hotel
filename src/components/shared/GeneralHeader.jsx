@@ -5,7 +5,7 @@ const GeneralHeader = () => {
   return (
     <div className="header_container">
       <div className="header_logo">
-        <img className="header_icon" src="/public/logo.png" alt="" />
+        <img className="header_icon" src="logo.png" alt="" />
         <h1 className="header_label"><Link className="label_text" to ='/'>Booking</Link></h1>
       </div>
       
